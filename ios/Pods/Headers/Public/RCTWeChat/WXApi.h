@@ -1,0 +1,1 @@
+../../../../../node_modules/rn-wechat-fix/ios/WXApi.h

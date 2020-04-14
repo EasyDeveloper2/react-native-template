@@ -1,0 +1,35 @@
+{
+  "name": "RCTWeChat",
+  "version": "1.9.12",
+  "summary": "React-Native(iOS/Android) functionalities include WeChat Login, Share, Favorite and Payment {QQ: 336021910}",
+  "description": "React-Native(iOS/Android) functionalities include WeChat Login, Share, Favorite and Payment {QQ: 336021910}",
+  "authors": {
+    "yorkie": "yorkiefixer@gmail.com"
+  },
+  "homepage": "https://github.com/yorkie/react-native-wechat",
+  "license": "MIT",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/yorkie/react-native-wechat.git",
+    "tag": "master"
+  },
+  "source_files": "ios/*.{h,m}",
+  "dependencies": {
+    "React": [
+
+    ]
+  },
+  "vendored_libraries": "ios/libWeChatSDK.a",
+  "requires_arc": true,
+  "frameworks": [
+    "SystemConfiguration",
+    "CoreTelephony"
+  ],
+  "libraries": [
+    "sqlite3",
+    "c++",
+    "z"
+  ]
+}
