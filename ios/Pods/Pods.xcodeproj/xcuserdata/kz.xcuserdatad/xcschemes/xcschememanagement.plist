@@ -39,16 +39,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>QBImagePickerController-QBImagePicker.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>QBImagePickerController.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>RCTRequired.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -80,6 +70,11 @@
 			<false/>
 		</dict>
 		<key>RNGestureHandler.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RNImageCropPicker-QBImagePicker.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -220,6 +215,11 @@
 			<false/>
 		</dict>
 		<key>libwebp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>react-native-admob.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

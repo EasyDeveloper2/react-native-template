@@ -14,7 +14,7 @@ class Me extends Component {
   render() {
     return (
       
-      <SafeAreaView style={{width:1000}}>
+      <SafeAreaView >
         <Text> Me </Text>
       </SafeAreaView>
     );

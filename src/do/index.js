@@ -1,39 +1,30 @@
-import {checkFilePermission,requestFilePermisson} from './permission'
-import methods from '../service/methods'
-import share from '../utils/share'
-import test from '../utils/test'
-import utils from '../utils/index'
+import {checkFilePermission,requestFilePermisson} from './api/permission'
+import share from './api/share'
+import test from './api/test'
 import {Actions} from 'react-native-router-flux'
-import {sw,sh} from '../utils/screenAdapter'
+import {sw,sh} from './api/screenAdapter'
 import FastImage from 'react-native-fast-image';
 import { createImageProgress } from 'react-native-image-progress';
-import FitImage from '../components/FitImage';
 const ProgressImage = createImageProgress(FastImage);
+import {openPicker,openCamera} from './api/imagePicker';
+import measureUI from './api/measureUI';
+import { 
+    AdMobBanner, 
+    AdMobInterstitial, 
+    PublisherBanner,
+    AdMobRewarded
+  } from 'react-native-admob'
 
 export {
-    checkFilePermission,
-    /** 请求文件权限*/
-    requestFilePermisson,
-    /** 服务器请求集合 */
-    methods,
-    /** 分享方法集合*/
-    share,
-    /** 校验数据格式集合*/
-    test,
-    /** 页面跳转路由*/
-    Actions,
-    /** 适配屏幕宽度*/
-    sw,
-    /** 适配屏幕高度*/
-    sh,
+
+
     /** 带缓存功能的图片组件*/
     FastImage,
     /**带进度条的图片组件*/
     ProgressImage,
-    /**自适应的图片组件*/
-    FitImage,
-    /**处理数据工具*/ 
-    utils
+    AdMobBanner,
+    PublisherBanner
+
 }
 
 /**
@@ -44,24 +35,18 @@ export default{
     checkFilePermission,
     /** 请求文件权限*/
     requestFilePermisson,
-    /** 服务器请求集合 */
-    methods,
     /** 分享方法集合*/
-    share,
+    ...share,
     /** 校验数据格式集合*/
-    test,
+    ...test,
     /** 页面跳转路由*/
-    Actions,
+    ...Actions,
+
    /** 适配屏幕宽度*/
     sw,
     /** 适配屏幕高度*/
     sh,
-    /** 带缓存功能的图片组件*/
-    FastImage,
-    /** 带进度条的图片组件*/
-    ProgressImage,
-     /**自适应的图片组件*/
-    FitImage,
-    /**处理数据工具类*/
-    utils
+    openPicker,
+    openCamera,
+    measureUI
 }

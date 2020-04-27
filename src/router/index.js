@@ -1,6 +1,5 @@
 import {Image} from 'react-native';
 import React from 'react'; //不能缺省
-import Login from '../pages/login/index';
 import Index from '../pages/index/index';
 import Me from '../pages/me';
 
@@ -16,6 +15,7 @@ const App = ()=>{
    </Router>
 }
 export default App
+
 const tabIcon = ({ focused, title }) => {
     let list = {
       '首页': {

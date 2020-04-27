@@ -2,7 +2,7 @@ import {AsyncStorage} from 'react-native'
 import Toast from '../utils/toast';
 import { Actions } from 'react-native-router-flux'
 import config from '../config/config';
-import { sw } from '../utils/screenAdapter';
+
 // import NetInfo from "@react-native-community/netinfo";
 
 let handleErrorMsg=(text)=>{
